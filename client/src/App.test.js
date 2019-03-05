@@ -29,3 +29,11 @@ describe('<Display/>', () => {
   })
 })
 
+describe('<Dashboard />', () => {
+  it('should have clickable buttons', () => {
+    const mockFunc = jest.fn()
+    const { getByTestId } = render(<Dashboard recordBall={mockFunc}/>);
+    const record = getByTestId('ball');
+    fireEvent.click(record);
+  })
+})
