@@ -37,7 +37,7 @@ class App extends Component {
     return (
       <div className="App">
         <Display balls={this.state.balls} strikes={this.state.strikes}/>
-        <Dashboard recordStrike={this.recordStrike} recordBall={this.recordStrike} recordFoul={this.recordFoul} recordHit={this.recordHit}/>
+        <Dashboard recordStrike={this.recordStrike} recordBall={this.recordBall} recordFoul={this.recordFoul} recordHit={this.recordHit}/>
       </div>
     );
   }
