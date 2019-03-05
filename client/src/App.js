@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import Dashboard from './components/Dashboard'
+import Display from './components/Display'
 
 class App extends Component {
   constructor(props) {
@@ -35,7 +37,7 @@ class App extends Component {
     return (
       <div className="App">
         <Display balls={this.state.balls} strikes={this.state.strikes}/>
-        <Dashboard />
+        <Dashboard recordStrike={this.recordStrike} recordBall={this.recordStrike} recordFoul={this.recordFoul} recordHit={this.recordHit}/>
       </div>
     );
   }
